@@ -29,6 +29,7 @@
 }
 /* COLORS: #ebecf0,  #f94f4c, #ffc830*/
 
+/* ALL */
 * {
     margin: 0;
     padding: 0;
@@ -40,8 +41,11 @@ body {
 }
 
 .container {
+    position: relative;
     width: 1295px;
+    height: 1000px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 /* HEADER */
@@ -76,11 +80,11 @@ header {
     list-style-type: none;
     display: flex;
     margin-top: 10px;
-    margin-right: 35px;
+    margin-right: 34.5px;
 }
 
 .menu ul li {
-    margin-left: 22.5px;
+    margin-left: 23px;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -97,7 +101,7 @@ header {
 
 .additional-options .search {
     cursor: pointer;
-    margin-left: 3px;
+    margin-left: 2.5px;
     margin-top: 2px;
 }
 
@@ -121,18 +125,100 @@ select {
 
 .select-recipient {
     font-family: ProximaNova-Semibold;
-    width: 110px;
-    height: 27px;
-    margin-left: 23px;
-    margin-top: 13px;
+    width: 111px;
+    height: 28px;
+    margin-left: 22px;
+    margin-top: 12px;
     border-radius: 20px;
     background-color: #ffc830;
     border: none;
     font-size: 14px;
-    padding-left: 12.5px;
+    padding-left: 16px;
     padding-top: -1px;
-    background: url("../images/UI/chevron-down-solid.svg")
-        no-repeat right #ffc830;
+    background: url("../images/UI/chevron-down-solid.svg") no-repeat right
+        #ffc830;
     background-size: 12px 12px;
-    background-position-x: 83px;
+    background-position-x: 85px;
+}
+
+/* BURGER MENU*/
+
+.burger-menu {
+    position: fixed;
+    margin-top: 28.5px;
+    margin-left: 10px;
+}
+
+/* POSTER */
+
+.poster {
+    position: absolute;
+    background-color: blue;
+    right: 0;
+    width: 96.4%;
+    height: 461px;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/common/bearBears.jpg");
+    background-size: 104% ;
+    background-position: -50px -66px;
+}
+
+.poster-caption {
+    color: #ffc830;
+    text-transform: uppercase;
+    position: relative;
+    left: 66px;
+    top: 126px;
+    font-size: 13px;
+    word-spacing: 1px;
+}
+
+.poster-text {
+    position: relative;
+    left: 66px;
+    top: 114px;
+    font-size: 40px;
+    word-wrap: wrap;
+    word-spacing: 3px;
+    letter-spacing: 0.1px;
+    line-height: 41px;
+    width: 570px;
+    color: #fff;
+}
+
+.poster-info {
+    position: relative;
+    width: 204px;
+    display: flex;
+    font-size: 11px;
+    left: 66px;
+    top: 111px;
+}
+
+.poster-views {
+    margin-left: 57px;
+}
+
+.poster-additional-info {
+    color: #fff;
+    margin-top: 4px;
+    margin-left: 2px;
+    word-spacing: 5px;
+}
+
+.poster-actions {
+    position: relative;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    top: 137px;
+    left: 65px;
+}
+
+.poster-read {
+    font-family: ProximaNova-Semibold;
+    border-radius: 20px;
+    background-color: #ffc830;
+    border: none;
+    width: 80px;
+    font-size: 14px;
 }
