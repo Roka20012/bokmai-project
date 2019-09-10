@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Lora-Bold";
+    src: url("../fonts/Lora-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Lora-BoldItalic";
+    src: url("../fonts/Lora-BoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../fonts/Lora-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Extrabld";
+    src: url("../fonts/ProximaNova-Extrabld.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src: url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+/* COLORS: #ebecf0,  #f94f4c, #ffc830*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ebecf0;
+}
+
+.container {
+    width: 1295px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ebecf0;
+    border-right: 2px solid #ebecf0;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 35px;
+}
+
+.menu ul li {
+    margin-left: 22.5px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.additional-options {
+    width: 105px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 2px solid #ebecf0;
+}
+
+.additional-options .search {
+    cursor: pointer;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+.additional-options .bookmark {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+/* IE11 */
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none; /* Webkit */
+    -moz-appearance: none; /* FF */
+    -ms-appearance: none; /* Edge */
+    appearance: none; /* Future */
+}
+
+.select-recipient {
+    font-family: ProximaNova-Semibold;
+    width: 110px;
+    height: 27px;
+    margin-left: 23px;
+    margin-top: 13px;
+    border-radius: 20px;
+    background-color: #ffc830;
+    border: none;
+    font-size: 14px;
+    padding-left: 12.5px;
+    padding-top: -1px;
+    background: url("../images/UI/chevron-down-solid.svg")
+        no-repeat right #ffc830;
+    background-size: 12px 12px;
+    background-position-x: 83px;
+}
