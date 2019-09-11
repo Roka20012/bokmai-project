@@ -145,20 +145,23 @@ select {
 
 .burger-menu {
     position: fixed;
-    margin-top: 28.5px;
+    position: sticky;
+    top: 10px;
+    background-color: red;
+    margin-top: 29px;
     margin-left: 10px;
 }
 
 /* POSTER */
 
 .poster {
-    position: absolute;
-    background-color: blue;
-    right: 0;
-    width: 96.4%;
+    position: relative;
+    float: right;
+    width: 96.3%;
     height: 461px;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/common/bearBears.jpg");
-    background-size: 104% ;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../images/common/bearBears.jpg");
+    background-size: 104%;
     background-position: -50px -66px;
 }
 
@@ -195,7 +198,7 @@ select {
 }
 
 .poster-views {
-    margin-left: 57px;
+    margin-left: 56px;
 }
 
 .poster-additional-info {
@@ -214,11 +217,104 @@ select {
     left: 65px;
 }
 
-.poster-read {
+.read {
     font-family: ProximaNova-Semibold;
     border-radius: 20px;
     background-color: #ffc830;
     border: none;
     width: 80px;
     font-size: 14px;
+}
+
+/* ARTICLE REVIEWS SECTION */
+
+.article-reviews {
+    position: relative;
+    border-left: 1px solid #ebecf0;
+    float: right;
+    width: 96.3%;
+    height: 425px;
+}
+
+.article-caption {
+    position: absolute;
+    right: 256px;
+    letter-spacing: 1px;
+    top: 86px;
+    font-size: 12px;
+    color: #ffc830;
+}
+
+.snail-img {
+    box-sizing: border-box;
+    position: absolute;
+    left: 64px;
+    top: 84px;
+    width: 533px;
+    height: 237px;
+    border-bottom: 4px solid #d44141;
+}
+
+.article-statistics {
+    width: 200px;
+    font-size: 12px;
+    position: relative;
+    left: 27px;
+    top: -62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-views {
+    margin-left: 64px;
+}
+
+.article-text {
+    color: #5b5664;
+    width: 480px;
+    line-height: 36px;
+    word-spacing: 2.5px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 27px;
+    top: -31px;
+}
+
+.article-read {
+    position: relative;
+    height: 28px;
+    left: 27px;
+    top: -8px;
+}
+
+.post-review {
+    background-color: #fff;
+    position: absolute;
+    top: 116px;
+    right: 256px;
+    border: 1px solid black;
+    width: 423px;
+    height: 229px;
+}
+
+.post-review::before {
+    display: block;
+    content: "";
+    margin-top: 87px;
+    margin-left: -16px;
+    background-color: #d44141;
+    width: 29px;
+    height: 4px;
+}
+
+.post-review::after {
+    display: block;
+    content: "";
+    background: url("../images/UI/bookmark_big.svg") no-repeat;
+    margin-top: 8px;
+    margin-left: 390px;
+    width: 22px;
+    height: 28px;
 }
