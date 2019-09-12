@@ -551,3 +551,26 @@ select {
     width: 96.3%;
     height: 50px;
 }
+
+/* FOOTER */
+
+.footer {
+    margin-top: 70px;
+    background-color: #ebecf0;
+    color: #5b5664;
+    position: relative;
+    width: 96.3%;
+    height: 172px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media-links object:hover {
+    cursor: pointer;
+}
+
+.footer__about-text {
+    width: 40%;
+}
