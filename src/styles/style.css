@@ -45,6 +45,7 @@ body {
     overflow: hidden;
     position: relative;
     width: 1295px;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -157,7 +158,6 @@ select {
 }
 
 .burger-menu__checkbox:checked ~ .left-menu {
-    margin-left: 48px;
     transition: all ease 0.2s;
     width: 316px;
     padding: 0 0 150px 200px;
@@ -179,12 +179,23 @@ select {
 }
 
 .burger-menu {
-    height: 100%;
     z-index: 2;
     cursor: pointer;
     position: fixed;
-    top: 60px;
-    margin-left: 10px;
+    top: 75px;
+    margin-left: 22px;
+}
+
+.burger-menu::after {
+    content: '';
+    display: block;
+    background-color: #ebecf0;
+    height: 100%;
+    width: 1px;
+    position: fixed;
+    clear: both;
+    left: 69px;
+    top: 51px;
 }
 
 /* LEFT MENU */
@@ -194,13 +205,11 @@ select {
     position: fixed;
     z-index: 1;
     overflow: hidden;
-    width: 0;
-    
-    padding: 0;
     height: 100%;
+    width: 69px;
     top: 0px;
-    /* margin-left: 48px; */
     background-color: #fff;
+    /* border-right: 1px solid #ebecf0; */
 }
 
 .left-menu-navigation {
@@ -241,10 +250,8 @@ select {
 
 .poster {
     position: relative;
-    float: right;
-    width: 96.3%;
+    width: 100%;
     height: 461px;
-    border-left: 1px solid #ebecf0;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../images/common/bearBears.jpg") no-repeat;
     background-size: cover;
@@ -325,7 +332,7 @@ select {
 
 .article-caption {
     position: absolute;
-    right: 275px;
+    right: 255px;
     letter-spacing: 1px;
     top: 86px;
     font-size: 12px;
@@ -335,10 +342,13 @@ select {
 .snail-img {
     box-sizing: border-box;
     position: absolute;
-    left: 45px;
-    top: 84px;
+    left: 64px;
+    top: 83px;
     width: 533px;
     height: 237px;
+    /* width: 42.78%; */
+    /* height: 55.88%; */
+    /* height: auto; */
     border-bottom: 4px solid #d44141;
 }
 
@@ -379,8 +389,8 @@ select {
 .post-review {
     background-color: #fff;
     position: absolute;
-    top: 116px;
-    right: 275px;
+    top: 115px;
+    right: 256px;
     border: 1px solid black;
     width: 423px;
     height: 229px;
@@ -403,7 +413,7 @@ select {
 
 .poster-bookmark-article {
     position: absolute;
-    right: 19px;
+    right: 11px;
     bottom: -14px;
 }
 
@@ -412,12 +422,12 @@ select {
 .articles {
     display: inline-flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
     border-left: 1px solid #ebecf0;
     float: right;
     width: 96.3%;
-    height: 350px;
 }
 
 .article-poster {
@@ -651,9 +661,10 @@ select {
     color: #5b5664;
     position: relative;
     width: 100%;
-    height: 172px;
+    padding: 30px 0;
     float: right;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -677,7 +688,8 @@ select {
     background: none;
     border: none;
     border-bottom: 1px solid #000;
-    width: 300px;
+    width: 240px;
+    padding-right: 50px;
     margin-top: 20px;
     line-height: 30px;
 }
@@ -713,4 +725,10 @@ select {
     width: 350px;
     font-size: 13px;
     line-height: 20px;
+}
+
+@media screen and (max-width: 1311px) {
+  .container {
+    /* background-color: blue; */
+  }
 }
