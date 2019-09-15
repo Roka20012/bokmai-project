@@ -280,7 +280,7 @@ select {
     word-spacing: 3px;
     letter-spacing: 0.1px;
     line-height: 41px;
-    width: 570px;
+    width: 80%;
     color: #fff;
 }
 
@@ -330,8 +330,7 @@ select {
     justify-content: space-around;
     flex-direction: column;
     position: relative;
-    width: 96.3%;
-    height: 425px;
+    min-height: 425px;
 }
 
 .article-caption {
@@ -346,6 +345,7 @@ select {
 }
 
 .snail-img {
+    position: relative;
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -377,6 +377,7 @@ select {
 .article-text {
     color: #5b5664;
     width: 480px;
+    width: 90%;
     line-height: 36px;
     word-spacing: 2.5px;
     font-size: 30px;
@@ -400,7 +401,7 @@ select {
     right: 256px;
     border: 1px solid black;
     width: 423px;
-    height: 229px;
+    /* height: 229px; */
 }
 
 .post-review::before {
@@ -432,7 +433,7 @@ select {
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    width: 96.3%;
+    width: 100%;
     padding-left: 33px;
 }
 
@@ -498,11 +499,11 @@ select {
 /* ADVICE SECTION */
 
 .advices {
-    width: 96.3%;
+    width: 100%;
     height: 560px;
     background: url("../images/common/cute-brain-cartoon.jpg") no-repeat right;
-    background-size: 85.5%;
-    background-position: 87px 99px;
+    background-size: cover;
+    background-position: center;
 }
 
 .advices .advice {
@@ -511,8 +512,8 @@ select {
     left: 77px;
     top: 175px;
     left: 177px;
-    width: 607px;
-    height: 230px;
+    width: 70%;
+    min-height: 230px;
 }
 
 .advices .advice::before {
@@ -541,9 +542,10 @@ select {
 }
 
 .advices .articles-poster-bookmark {
-    position: relative;
-    left: 482px;
+    position: absolute;
+    left: 77%;
     top: 38px;
+    top: 96%;
 }
 
 .advice-describe {
@@ -552,7 +554,7 @@ select {
     word-wrap: wrap;
     top: -28px;
     left: 28px;
-    width: 500px;
+    padding-right: 30px;
     word-spacing: 4px;
     font-size: 30px;
     font-weight: bold;
@@ -655,7 +657,7 @@ select {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    width: 96.3%;
+    width: 100%;
     height: 50px;
 }
 
@@ -747,6 +749,7 @@ select {
     }
 
     .header-mobile {
+        display: block;
         position: fixed;
         z-index: 2;
         top: 0px;
@@ -830,5 +833,47 @@ select {
     .left-menu-navigation {
         left: 30px;
         margin-top: 0px;
+    }
+
+    .articles {
+        padding: 0;
+    }
+
+    .snail-img,
+    .article-reviews--reverse .snail-img {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .post-review {
+        width: 100%;
+        margin: 0 auto;
+        right: 0;
+        top: 170px;
+    }
+
+    .article-reviews--reverse .post-review {
+        width: 100%;
+        margin-top: 80px;
+        left: 0px;
+    }
+
+    .article-reviews--reverse .article-text {
+        left: 0px;
+    }
+    .article-reviews--reverse .article-read {
+        left: 67%;
+    }
+
+    .article-reviews--reverse .post-review::before {
+
+        /* margin: 0px; */
+        margin-left: 96%;
+    }
+
+    .advices .advice {
+        left: 0%;
     }
 }
