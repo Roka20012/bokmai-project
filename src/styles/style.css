@@ -44,7 +44,6 @@ body {
 .container {
     overflow: hidden;
     position: relative;
-    width: 1295px;
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
@@ -58,7 +57,7 @@ body {
 
 /* HEADER */
 .header {
-    z-index: 2;
+    z-index: 3;
     position: relative;
     height: 50px;
     background-color: #fff;
@@ -74,7 +73,7 @@ body {
     justify-content: space-between;
 }
 
-.logo-container {
+.header__logo-container {
     width: 148px;
     display: flex;
     justify-content: center;
@@ -82,20 +81,21 @@ body {
     border-right: 1px solid #ebecf0;
 }
 
-.menu {
+.navigation-menu {
     margin-top: 10px;
 }
 
-.menu ul {
+.navigation-menu-list  {
     list-style-type: none;
     display: flex;
     margin-top: 10px;
     margin-right: 34.5px;
 }
 
-.menu ul li {
+.navigation-menu-list__item{
     margin-left: 23px;
     font-size: 13px;
+    font-size: 0.8em;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -109,13 +109,13 @@ body {
     border-left: 1px solid #ebecf0;
 }
 
-.additional-options .search {
+.additional-options__search {
     cursor: pointer;
     margin-left: 2.5px;
     margin-top: 2px;
 }
 
-.additional-options .bookmark {
+.additional-options__bookmark {
     cursor: pointer;
     margin-right: 5px;
     margin-top: 4px;
@@ -133,7 +133,7 @@ select {
     appearance: none; /* Future */
 }
 
-.select-recipient {
+.navigation__select-recipient {
     font-family: ProximaNova-Semibold;
     width: 111px;
     height: 28px;
@@ -153,7 +153,7 @@ select {
 
 /* BURGER MENU*/
 
-.close-burger-menu__icon {
+.burger-menu__close-icon {
     display: none;
 }
 
@@ -163,7 +163,7 @@ select {
     padding: 0 0 150px 200px;
 }
 
-.burger-menu__checkbox:checked ~ .burger-menu .close-burger-menu__icon {
+.burger-menu__checkbox:checked ~ .burger-menu .burger-menu__close-icon {
     display: block;
 }
 
@@ -182,20 +182,22 @@ select {
     z-index: 2;
     cursor: pointer;
     position: fixed;
-    top: 75px;
+    top: 65px;
     margin-left: 22px;
+    margin-left: .5%;
 }
 
 .burger-menu::after {
     content: '';
     display: block;
     background-color: #ebecf0;
-    height: 100%;
+    height: 120%;
     width: 1px;
     position: fixed;
     clear: both;
-    left: 69px;
-    top: 51px;
+    left: 40px;
+    /* left: 4%; */
+    top: 0px;
 }
 
 /* LEFT MENU */
@@ -206,7 +208,8 @@ select {
     z-index: 1;
     overflow: hidden;
     height: 100%;
-    width: 69px;
+    width: 40px;
+    /* width: 4%; */
     top: 0px;
     background-color: #fff;
     /* border-right: 1px solid #ebecf0; */
@@ -323,30 +326,34 @@ select {
 /* ARTICLE REVIEWS SECTION */
 
 .article-reviews {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     position: relative;
-    border-left: 1px solid #ebecf0;
-    float: right;
     width: 96.3%;
     height: 425px;
 }
 
 .article-caption {
     position: absolute;
-    right: 255px;
     letter-spacing: 1px;
     top: 86px;
+    right: 255px;
+    top: -31px;
+    right: 0px;
     font-size: 12px;
     color: #ffc830;
 }
 
 .snail-img {
+    display: block;
     box-sizing: border-box;
     position: absolute;
     left: 64px;
     top: 83px;
     width: 533px;
     height: 237px;
-    /* width: 42.78%; */
+    /* width: 40.8%; */
     /* height: 55.88%; */
     /* height: auto; */
     border-bottom: 4px solid #d44141;
@@ -425,9 +432,8 @@ select {
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    border-left: 1px solid #ebecf0;
-    float: right;
     width: 96.3%;
+    padding-left: 33px;
 }
 
 .article-poster {
@@ -435,13 +441,16 @@ select {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 323px;
-    height: 90%;
+    min-width: 323px;
+    max-width: 30%;
+    margin: 10px;
+    /* height: 90%; */
 }
 
 .articles-poster-bookmark {
     position: relative;
     left: 135px;
+    left: 42%;
     top: -16px;
 }
 
@@ -472,7 +481,7 @@ select {
 .poster-img {
     margin-top: 24px;
     width: 100%;
-    height: 193px;
+    /* height: 193px; */
 }
 
 .poster-describe {
@@ -489,13 +498,11 @@ select {
 /* ADVICE SECTION */
 
 .advices {
-    float: right;
     width: 96.3%;
     height: 560px;
-    border-left: 1px solid #ebecf0;
     background: url("../images/common/cute-brain-cartoon.jpg") no-repeat right;
     background-size: 85.5%;
-    background-position: 44px 99px;
+    background-position: 87px 99px;
 }
 
 .advices .advice {
@@ -503,6 +510,7 @@ select {
     position: relative;
     left: 77px;
     top: 175px;
+    left: 177px;
     width: 607px;
     height: 230px;
 }
@@ -552,7 +560,7 @@ select {
 
 .advices-caption {
     position: relative;
-    left: 45px;
+    left: 84px;
     top: 34px;
     color: #ffc830;
     text-transform: uppercase;
@@ -563,7 +571,6 @@ select {
 /* REVIEWS SECTION */
 
 .articles.articles-next {
-    border-left: 1px solid #f7f7f9;
     background-color: #f7f7f9;
 }
 
@@ -575,8 +582,10 @@ select {
 }
 
 .article-reviews--reverse .article-caption {
-    top: 51px;
-    left: 172px;
+    /* top: 51px;
+    left: 172px; */
+    top: -31px;
+    left: 0px;
 }
 
 .article-reviews--reverse .post-review {
@@ -646,8 +655,6 @@ select {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    border-left: 1px solid #ebecf0;
-    float: right;
     width: 96.3%;
     height: 50px;
 }
@@ -662,7 +669,6 @@ select {
     position: relative;
     width: 100%;
     padding: 30px 0;
-    float: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
