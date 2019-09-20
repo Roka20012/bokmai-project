@@ -1,0 +1,35 @@
+{
+    "name": "bokmai-project",
+    "version": "1.0.0",
+    "description": "This is only html&amp;css site\r [demo](https://roka20012.github.io/bokmai-project/)\r > using pixel perfect",
+    "main": "webpack.config.js",
+    "dependencies": {
+        "webpack-cli": "^3.3.9",
+        "webpack": "^4.40.2"
+    },
+    "devDependencies": {
+        "express": "^4.17.1",
+        "webpack-dev-middleware": "^3.7.1",
+        "webpack-dev-server": "^3.8.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "watch": "webpack --watch",
+        "start": "webpack-dev-server --open",
+        "server": "node server.js",
+        "dev": "webpack --mode development --watch",
+        "build": "webpack --mode production --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Roka20012/bokmai-project.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Roka20012/bokmai-project/issues"
+    },
+    "homepage": "https://github.com/Roka20012/bokmai-project#readme"
+}
