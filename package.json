@@ -4,7 +4,7 @@
     "description": "This is only html&amp;css site\r [demo](https://roka20012.github.io/bokmai-project/)\r > using pixel perfect",
     "main": "webpack.config.js",
     "dependencies": {
-        "webpack-cli": "^3.3.9",
+        "webpack-cli": "^3.3.12",
         "webpack": "^4.40.2"
     },
     "devDependencies": {
